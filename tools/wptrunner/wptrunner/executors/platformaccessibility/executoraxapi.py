@@ -36,7 +36,9 @@ def find_browser(name):
     pid = app.processIdentifier()
     if pid == -1:
         return None
-    return AXUIElementCreateApplication(pid)
+
+    return None
+    #return AXUIElementCreateApplication(pid)
 
 
 def find_active_tab(browser):
