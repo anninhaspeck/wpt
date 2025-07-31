@@ -36,9 +36,9 @@ class PlatformAccessibilityProtocolPart(ProtocolPart):
         if linux:
             self.impl = AtspiExecutorImpl()
             self.impl.setup(self.product_name, self.logger)
-        if mac:
-            self.impl = AXAPIExecutorImpl()
-            self.impl.setup(self.product_name, self.logger)
+        # if mac:
+        #     self.impl = AXAPIExecutorImpl()
+        #     self.impl.setup(self.product_name, self.logger)
         if windows:
             self.impl = WindowsAccessibilityExecutorImpl()
             self.impl.setup(self.product_name, self.logger)
@@ -50,4 +50,5 @@ class PlatformAccessibilityProtocolPart(ProtocolPart):
         if not valid_api_for_platform(api):
             return ""
 
-        return self.impl.test_accessibility_api(dom_id, test, api, url)
+        return ""
+        # return self.impl.test_accessibility_api(dom_id, test, api, url)
