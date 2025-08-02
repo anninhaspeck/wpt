@@ -1,0 +1,8 @@
+tem_suco = False
+tem_cha_gelado = False 
+if tem_suco:  
+      print (‘A vida é bela….! 🥰’)
+elif tem_cha:
+       print ( ‘Vamos tomar cha, entao…’)
+else:
+    print ( ‘Vou tomar um  banho para me refrescar, nem estava com sede mesmo….’)
